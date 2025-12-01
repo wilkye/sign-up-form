@@ -11,6 +11,10 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+}
+
 .container {
     position: relative;
     width: 100%;
@@ -66,4 +70,37 @@
     font-size: 12px;
     color: white;
     text-align: center;
+    padding: 5px;
+}
+
+.footer p a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+.form-container {
+    color: black;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: white;
+    background-color: #596D48;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 30px 10px 30px;
+}
+
+.account {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login {
+    color: #596D48;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 600;
 }
