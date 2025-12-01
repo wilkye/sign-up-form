@@ -11,6 +11,11 @@
     padding: 0;
 }
 
+.container {
+    position: relative;
+    width: 100%;
+}
+
 .sidebar-img-container {
     width: 40vw;
     height: 100vh;
@@ -25,13 +30,19 @@
 }
 
 .label {
+    position: absolute;
+    top: 23%;
+    left: 0;
+    width: 40vw;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.506);
+    z-index: 2;
+    padding: 10px 0 10px 0;
 }
 
-.label img {
+.label>img {
     height: 100px;
     display: block;
 }
@@ -42,4 +53,17 @@
     margin-bottom: -16px;
     color: white;
     font-size: 72px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 40vw;
+}
+
+.footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+    text-align: center;
 }
