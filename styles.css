@@ -6,7 +6,7 @@
 }
 
 * {
-    font-family: 'Norse', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -17,7 +17,6 @@ body {
 
 .container {
     position: relative;
-    width: 100%;
 }
 
 .sidebar-img-container {
@@ -52,6 +51,7 @@ body {
 }
 
 .label p {
+    font-family: 'Norse', Arial, sans-serif;
     margin: 0;
     padding: 0;
     margin-bottom: -16px;
@@ -82,12 +82,42 @@ body {
 
 .form-container {
     color: black;
+    background-color: rgb(241, 241, 241);
     padding: 0;
     margin: 0;
 }
 
+.top {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.big {
+    margin-top: 25%;
+    margin-left: 40px;
+}
+
+.small {
+    margin: 20px 0 37px 40px;
+}
+
+.middle {
+    background-color: white;
+}
+
+.mid-title {
+    font-size: 20px;
+    padding: 20px 10px 10px 0;
+    margin-left: 40px;
+}
+
+form {
+    padding: 10px;
+    box-shadow: 0px 6px 10px -7px rgba(0,0,0,0.2);
+}
+
 button {
-    margin: 0;
+    margin: 25px 0 15px 40px;
     padding: 0;
     border: none;
     color: white;
@@ -96,11 +126,13 @@ button {
     padding: 10px 35px 10px 35px;
     border-radius: 6px;
     font-weight: 550;
-    font-size: 12px;
+    font-size: 14px;
+    box-shadow: 0px 8px 10px -7px rgba(0,0,0,0.89);
 }
 
 .account {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 0 0 40px;
 }
 
 .login {
