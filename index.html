@@ -29,44 +29,46 @@
                 You know you need something like
                 this in your life to help you
                 realize your deepest dreams.
-                Sign up now to get started.
+                Sign up <em>now</em> to get started.
             </p>
             <p class="small">
-                You know you want to.
+                You <em>know</em> you want to.
             </p>
         </div>
         <div class="middle">
             <p class="mid-title">Let's do this!</p>
             <!-- FORM -->
-            <form>
-                <div class="form-item">
-                    <label>FIRST NAME</label>
-                    <input>
-                </div>
-                <div class="form-item">
-                    <label>LAST NAME</label>
-                    <input>
-                </div>
-                <div class="form-item">
-                    <label>EMAIL</label>
-                    <input>
-                </div>
-                <div class="form-item">
-                    <label>PHONE NUMBER</label>
-                    <input>
-                </div>
-                <div class="form-item">
-                    <label>PASSWORD</label>
-                    <input>
-                </div>
-                <div class="form-item">
-                    <label>CONFIRM PASSWORD</label>
-                    <input>
-                </div>
-            </form>
+            <div class="mid-container">
+                <form id="basic-form" action="/form-handling" method="post">
+                    <div class="form-item">
+                        <label for="first-name">FIRST NAME</label>
+                        <input id="first-name" type="text">
+                    </div>
+                    <div class="form-item">
+                        <label for="last-name">LAST NAME</label>
+                        <input id="last-name" type="text">
+                    </div>
+                    <div class="form-item">
+                        <label for="email">EMAIL</label>
+                        <input id="email" type="email">
+                    </div>
+                    <div class="form-item">
+                        <label for="number">PHONE NUMBER</label>
+                        <input id="number" type="tel">
+                    </div>
+                    <div class="form-item">
+                        <label for="password">PASSWORD</label>
+                        <input id="password" type="password" class="pass" minlength="8" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="password">CONFIRM PASSWORD</label>
+                        <input id="password" type="password" class="pass" minlength="8" required>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="bottom">
-            <button>Create Account</button>
+            <button type="submit" class="create-account" form="basic-form">Create Account</button>
             <p class="account">Already have an account? <a href="" class="login">Log in</a></p>
         </div>
         </section>

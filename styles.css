@@ -85,6 +85,7 @@ body {
     background-color: rgb(241, 241, 241);
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 .top {
@@ -93,7 +94,7 @@ body {
 }
 
 .big {
-    margin-top: 25%;
+    margin-top: 170px;
     margin-left: 40px;
     max-width: 500px;
 }
@@ -113,13 +114,20 @@ body {
     margin-left: 40px;
 }
 
+.mid-container {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    box-shadow: 0px 6px 10px -7px rgba(0, 0, 0, 0.2);
+}
+
 form {
     padding: 10px 0 35px 40px;
     margin-right: 60px;
     max-width: 500px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px 10px;
+    gap: 20px 20px;
 }
 
 .form-item {
@@ -133,10 +141,15 @@ form {
 .form-item input {
     height: 25px;
     width: 100%;
+    border: #E5E7EB solid 1px;
+    border-radius: 5px;
+    padding-left: 4px;
 }
 
 label {
     font-size: 10px;
+    padding: 2px;
+    letter-spacing: 1px;
 }
 
 button {
@@ -153,6 +166,11 @@ button {
     box-shadow: 0px 3px 10px -7px rgba(0, 0, 0, 0.89);
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: #698154;
+}
+
 .account {
     font-family: Arial, Helvetica, sans-serif;
     margin: 15px 0 0 40px;
@@ -163,4 +181,18 @@ button {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-weight: 600;
+}
+
+.login:hover {
+    color: #698154;
+}
+
+.form-item input:focus {
+    outline: none;
+    border: blue 1px solid;
+    box-shadow: 2px 2px 6px -2px rgba(0, 0, 0, 0.89);
+}
+
+.pass:invalid {
+    border: red 1px solid;
 }
